@@ -2,6 +2,13 @@ package es.ruymi.ejercicios
 
 //Diferencia entre prototipo, tipo y clase y diferencia entre subtipo y subclase
 //Un objeto se define con una clase pero pertenece a un tipo.
+/*
+Las clases son como planos de diseño en donde se describe la información y el comportamiento que tendrán los objetos,
+luego en nuestro código podemos hacer uso de esa información y ese comportamiento a través de los objetos,
+que son entidades que hay que instanciar manualmente cuando se las necesite.
+Con la clase podemos crear muchas copias del mismo objeto y luego cada copia tendrá su propio estado y
+evolucionar a su manera.
+ */
 
 /*
 1º Pedir un numero por consola, un numero inicial y uno final y crear la tabla de multiplicar de ese número
@@ -28,3 +35,4 @@ fun main(){
 
 
 //Pedir número de tarjeta de credito y comprobar que es una tarjeta de crédito y, posteriormente, pedir un dni y comprobar que el dni es válido.
+
