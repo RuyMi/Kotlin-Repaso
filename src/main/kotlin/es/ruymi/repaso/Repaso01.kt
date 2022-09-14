@@ -121,4 +121,9 @@ fun main (){
     //Pedir número de tarjeta de credito, dni
 
 
+
+    //Inmutable. Para que una lista sea inmutable utilizar List.of, Map.of...
+
+    // Para instanciar mas tarde debemos usar lazy siempre con val, y lateinit con var
+
 }
