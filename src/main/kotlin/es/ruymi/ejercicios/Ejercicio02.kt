@@ -29,7 +29,7 @@ fun main(){
     do{
         println("Dime un email: ")
         email = readln()
-        res = email.matches(regexEmails)
+        res = comprobarDni(email)
     } while (!res)
 
 
@@ -38,14 +38,15 @@ fun main(){
     println("Email escrita: $email")
 
 
-    fun comprobarDni(dni: String): Boolean {
-        val abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-        val res = (dni.dropLast(1).toInt())%23
-        if(dni.takeLast(1)== abc[res].toString()){
-            return true
-        }
-        return false
 
-
+}
+fun comprobarDni(dni: String): Boolean {
+    val abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    val res = (dni.dropLast(1).toInt())%23
+    if(dni.takeLast(1)== abc[res].toString()){
+        return true
     }
+    return false
+
+
 }
