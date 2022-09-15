@@ -1,4 +1,6 @@
 package es.ruymi.ProgramacionFuncional
+
+
 /*
 Funcion idempotente
 Es una función que conserva la propiedad f(f(x)) = f(x). Es decir, su empleo hace que una operacion pueda ser repetida
@@ -37,4 +39,8 @@ Nos permite extender las funcionalidades sin heredar de la clase
  */
 
 fun Int.isEven() = this % 2 == 0
+
+
+
+
 
