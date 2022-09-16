@@ -16,8 +16,8 @@ fun main(){
     val listaMalos = Array((Math.random().toInt()) * 30 + 10){ RazaMalvadas.values()[((Math.random() * 4 )).roundToInt()] }
 
     for(i in 0 until 10){
-        var puntosBuenos = 0
-        var puntosMalos = 0
+        var puntosBuenos: Int
+        var puntosMalos: Int
         val personajeBueno = listaBuenos[((Math.random() * listaBuenos.size).toInt())]
         val personajeMalo = listaMalos[((Math.random()) * listaMalos.size).toInt()]
         puntosBuenos = personajeBueno.valor
@@ -39,6 +39,4 @@ fun main(){
         }
     }
     println("La raza mala ha conseguido: $batallasGanadasMalos y la raza buena $batallasGanadasBuenos")
-
-
 }
